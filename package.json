@@ -1,0 +1,23 @@
+{
+  "name": "quinto-desafio",
+  "version": "1.0.0",
+  "description": "Este es un proyecto de ecommerce básico que se utiliza para el curso de Programacion Backend. La aplicación permite ver una lista de productos de tecnologia en construccion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mongoose": "^7.5.2",
+    "mongoose-paginate-v2": "^1.7.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.1",
+    "socket.io": "^4.7.2"
+  }
+}
