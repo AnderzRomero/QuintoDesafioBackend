@@ -6,10 +6,11 @@ Este es un proyecto de ecommerce básico que se utiliza para el curso de Program
 - Paquetes a instalar de npm   ----->  `npm install express express-handlebars socket.io nodemon mongoose multer dotenv mongoose-paginate-v2 cookie-parser`
 
 ## Funcionalidades
+### algunas desde el Frontend y otras desde POSTMAN
 - Ver una lista de productos disponibles
 - Agregar productos al carrito de compras
-<!-- - Ver el carrito de compras
-- Realizar una orden de compra -->
+- Ver el carrito de compras
+<!-- - Realizar una orden de compra -->
 
 ## Instalación
 

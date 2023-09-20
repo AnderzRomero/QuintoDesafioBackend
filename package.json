@@ -2,8 +2,10 @@
   "name": "quinto-desafio",
   "version": "1.0.0",
   "description": "Este es un proyecto de ecommerce básico que se utiliza para el curso de Programacion Backend. La aplicación permite ver una lista de productos de tecnologia en construccion.",
-  "main": "index.js",
+  "main": " ./src/app.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
