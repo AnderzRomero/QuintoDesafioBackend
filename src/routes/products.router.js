@@ -8,7 +8,7 @@ const productsService = new productsManager();
 // EndPoint para traer todos los productos
 router.get("/", async (req, res) => {
   const page = parseInt(req.query.page) || 1;
-  const limit = parseInt(req.query.limit) || 3;
+  const limit = parseInt(req.query.limit) || 5;
   const sort = req.query.sort || 'asc';
   const category = req.query.category || null; // Capturar el parámetro "category"
   const status = req.query.status || null;     // Capturar el parámetro "status"

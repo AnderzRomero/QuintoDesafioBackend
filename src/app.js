@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(`${__dirname}/public`));
-app.use(cookieParser("Cripto"));
+app.use(cookieParser("CRYPTO")); 
 app.use(session({
   store: MongoStore.create({
     mongoUrl: "mongodb+srv://coder:ander1234@cluster0.9vhlkqi.mongodb.net/ecommerce?retryWrites=true&w=majority",
@@ -44,17 +44,15 @@ app.use("/api/products", productsRouter);
 app.use("/api/carts", cartsRouter);
 app.use('/api/sessions', sessionRouter);
 
-const httpServer = app.listen(PORT, () => {
-  console.log(`Servidor escuchando en el puerto ${PORT}`);
-});
+const httpServer = app.listen(PORT, () =>console.log(`Servidor escuchando en el puerto ${PORT}`));
 
-const socketServer = new Server(httpServer);
+// const socketServer = new Server(httpServer);
 
-const productServices = new productsManager();
-const messageServices = new messagesManager();
+// const productServices = new productsManager();
+// const messageServices = new messagesManager();
 
-socketServer.on("connection", async (socket) => {
-  console.log("Cliente conectado con id: ", socket.id);
+// socketServer.on("connection", async (socket) => {
+//   console.log("Cliente conectado con id: ", socket.id);
 
 //   const listProducts = await productServices.getProducts();
 //   socketServer.emit("sendProducts", listProducts);
@@ -90,4 +88,4 @@ socketServer.on("connection", async (socket) => {
 //     // Emitir el mensaje a todos los clientes conectados
 //     socketServer.emit("chat", await messageServices.getMessages());
 //   });
-});
+// });
