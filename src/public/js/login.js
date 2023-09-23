@@ -15,7 +15,7 @@ form.addEventListener('submit', async e => {
     })
 
     const result = await response.json();
-    if (result.status === 200) {
+    if (response.status === 200) {
         window.location.replace('/products');
     }
 })

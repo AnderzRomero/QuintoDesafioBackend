@@ -1,5 +1,9 @@
-<h1 class="container-fluid">Products List</h1>
-<h2 class="container-fluid">Bienvenidos</h2>
+<h1 class="container-fluid">Lista de Productos</h1>
+<h2>bienvenido {{this.user.firstName}}.</h2>
+<h2 class="container-fluid">Bienvenido {{user.firstName}}</h2>
+<a href="/api/sessions/logout"><button>Cerrar Session</button></a>
+<br>
+
 {{#if category}}
 <p>Category: {{category}}</p>
 {{/if}}
