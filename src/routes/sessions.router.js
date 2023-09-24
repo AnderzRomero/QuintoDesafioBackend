@@ -12,7 +12,7 @@ router.post('/register', async (req, res) => {
 
     const newUser = { firstName, lastName, email, age, password };
     const result = await usersServices.create(newUser);
-    res.status(200).send({ status: "success", message: "Usuario registrado correctamente" });
+    res.status(200).send({ status: "success", message: "Usuario registrado correctamente", payload:result._id});
 })
 
 // EndPoint para logearse con el usuario

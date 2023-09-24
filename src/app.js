@@ -22,15 +22,15 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(`${__dirname}/public`));
-app.use(cookieParser("CRYPTO")); 
+app.use(cookieParser("CRYPTO")  ); 
 app.use(session({
   store: MongoStore.create({
     mongoUrl: "mongodb+srv://coder:ander1234@cluster0.9vhlkqi.mongodb.net/ecommerce?retryWrites=true&w=majority",
     ttl: 900
   }),
   secret: 'coderS3cret',
-  resave: false,
-  saveUninitialized: true
+  resave: true,
+  saveUninitialized: false
 }))
 
 //configuracion de handlebars
